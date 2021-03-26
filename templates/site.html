@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<!-- ...設定... -->
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="https://media.discordapp.net/attachments/797055517699997697/806980782928953375/35494_VhZbJGjS.png"/>
+    <link rel="bookmark" href="https://media.discordapp.net/attachments/797055517699997697/806980782928953375/35494_VhZbJGjS.png"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<!-- ...標題... -->
+    <title>801五國爭霸</title>
+		<!-- ...css... -->
+    <link href="https://huskypenguin.kenny0330tw.repl.co/homepage.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script>
+    window.onload = function () {
+    var odiv = document.getElementById("countdown");
+    var count = 600;
+        odiv.innerHTML=count;
+    var timer = null;
+    timer = setInterval(function () {
+        if (count > 0) {
+        count = count - 1;
+        odiv.innerHTML = count;
+        }
+    }, 1000);
+    }
+    </script>
+    <header><h1 style="text-align: center">801五國爭霸</h1></header>
+    <hr>
+    <h2><p style="text-align: center">總覽<hr style="width:30%"></p></h2>
+<p>&nbsp;</p> 
+  <div style="width:300px ;height:300px ;border:5px #00e1ff solid;border-radius:30px ;margin:0px auto">
+  <p style="text-align: center;font-size:20px">今日通過人數</p>
+  <p>&nbsp;</p>
+  <mark><h1 style="text-align: center;font-size:80px">{{ allpeople }}</h1></mark>
+  </div>
+  <p>&nbsp;</p>
+  <div style="width:300px ;height:300px ;border:5px #00e1ff solid;border-radius:30px ;margin:0px auto">
+  <p style="text-align: center;font-size:20px">今日考試數</p>
+  <p>&nbsp;</p>
+  <swap>
+  <mark><h1 style="text-align: center;font-size:80px">{{ totaltest }}</h1></mark>
+  </div>
+  <p>&nbsp;</p>
+  <div style="width:300px ;height:300px ;border:5px #00e1ff solid;border-radius:30px ;margin:0px auto">
+  <p style="text-align: center;font-size:15px">今日總達標/平均達標數</p>
+  <p>&nbsp;</p>
+  <swap>
+  <mark><h1 style="text-align: center;font-size:70px">{{ allnumber }}/{{ avrnumber }}</h1></mark>
+  </div>
+  <p>&nbsp;</p>
+  <hr>
+  <footer>
+  <p style="text-align: center;color:gray">網站開發中...30%</p>
+  <p style="text-align: center;color:white;display:bolck"><a href="list" style="color:white">通過名單</a>&nbsp;<a href="list2" style="color:white">需留校名單</a></p></p>
+  <p style="text-align: right;padding-right:5px">網頁<span id="countdown"></span>秒後重新載入</p>
+  </footer>
+  </body>
+</html>
+  </body>
+</html>
