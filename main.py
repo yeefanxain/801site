@@ -1,4 +1,3 @@
-import flask
 from flask import Flask
 from flask import render_template
 import pygsheets
@@ -96,6 +95,7 @@ def list2():
     ln32= wks2.cell('C25')      
     ln33= wks2.cell('C26')
     return render_template("list.html",name=name,d1=ln1.value,d3=ln3.value,d4=ln4.value,d5=ln5.value,d6=ln6.value,d7=ln7.value,d9=ln9.value,d10=ln10.value,d11=ln11.value,d12=ln12.value,d13=ln13.value,d14=ln14.value,d21=ln21.value,d22=ln22.value,d23=ln23.value,d24=ln24.value,d25=ln25.value,d26=ln26.value,d27=ln27.value,d28=ln28.value,d29=ln29.value,d30=ln30.value,d31=ln31.value,d32=ln32.value,d33=ln33.value)
+
 
 @app.route("/apk")
 def apk():
